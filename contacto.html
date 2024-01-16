@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Web, diseño, uade, argentina,los simpson"> 
+        <meta name="description" content="este es un sitio web parte de un ejercicio para la materia ddw de UADE">
+        
+         
+        <link rel="stylesheet" href="estilo.css" />
+        <!--<link rel="stylesheet" href="normalize.css">-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? familia= Lexend:wght@100;200;300;400;500;600;700;800;900 & display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="imagenes/icons8-marge-simpson-32.png" type="image/x-icon">
+
+        
+         <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+        <div class="contenedor">
+            <a  href="index.html"><img src="imagenes/logo de los s.webp" alt="10" width="50"> </a>
+            <div id="logo"><h1>Los Simpsons</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="capitulos.html">Capitulos</a></li>
+                    <li><a href="contacto.html" class="resaltado">Contacto</a></li>
+                    <li><a href="coleccion.html">galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contacto_inicio">
+        <div class="contenedor">
+            <h1>Contacto</h1>
+        </div>
+    </section>
+    <section id="SeccionUsuario">
+       <article class="texto_contacto">
+
+       <aside class="cuadrito"> 
+       
+        <h2>Contacto</h2>
+        <br>
+        <div>
+            <form action="envio.php" method="post" class="contacto_form">
+               
+                    <label for="nombre">Nombre y apellido</label>
+                    <br>
+                    <input type="text" id="nombre_form" name="Nombre" placeholder="Nombre completo">
+
+                </div>
+                <div>
+                    <label for="correo" >E-mail</label>
+                    <br>
+                    <input type="email" name="email" id="correo" placeholder="tu correo">
+
+                </div>
+                <div>
+                    <label for="msn">Comentario</label>
+                    <br>
+                    <textarea name="mensaje" id="msn" cols="55" rows="0" placeholder="Escribenos un mensaje"></textarea>
+                    <br>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </article>
+        </aside>
+     
+        <section>
+        <div class="Ubicacion">
+            <h3>Ubicacion</h3>
+            <p>Nos podes encontrar en Lima 757, C1073 CABA. Somos un grupo de personas que se enfoca en mejorar y entretener a las personas con la familia mas famosa Los Simpson.
+                Si tenes sugerencias o dudas con respecto a la pagina podes dejarnos tu contacto y tu comentario a travez del formulario.
+            </p>
+            <iframe class="googlem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4904805640817!2d-58.3844988884421!3d-34.61704355808963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1699920360848!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+        
+
+  </section>
+   
+   
+    <footer>
+        <P>Los Simpson,Camila Guzman,Tecnicatura en desarrollo software &copy; UADE 2023</P> "UADE": Unknown word.
+        <div class="icono">
+
+            <a href="https://www.facebook.com/LosSimpson/?locale=es_LA" target="_blank">
+                <i ><img src="imagenes/icono fb.png" alt="facebook de los simpson"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/thesimpsons/" target="_blank">
+                <i ><img src="imagenes/icono ig.png" alt="instagram de los simpson"></i>
+            </a>
+
+            <a href="https://twitter.com/TheSimpsons?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <i ><img src="imagenes/icono tw.png" alt="twitter de los simpson"></i>
+            </a>
+            
+            <a href="https://www.snapchat.com/lens/1ab500204cf843008453e0e8d31973d5" target="_blank">
+                <i><img src="imagenes/icono snapchat.png" alt="snapchat"></i>
+            </a>
+            
+        </div>
+        <div id="complementarios"> 
+            <h4>Tipografia usada: 'Lexend'</h4>
+            <h3>Colores complementarios</h3></div>
+      
+        <div class="color_paleta">
+            <div class="color" style="background-color: #EBDF0E;"></div>
+            <div class="color" style="background-color: #000680;"></div>
+            <div class="color" style="background-color:white"></div>
+            <div class="color" style="background-color: #EBBE01;" ></div>
+            <div class="color" style="background-color:#1D1D1D;" ></div>
+       </div>
+       <script>
+        // JavaScript para cambiar el color al hacer clic en un cuadro de color
+        document.addEventListener('DOMContentLoaded', function() {
+          var colorBoxes = document.querySelectorAll('.color');
+    
+          colorBoxes.forEach(function(box) {
+            box.addEventListener('click', function() {
+              var color = box.style.backgroundColor;
+              // Puedes hacer algo con el color seleccionado, como aplicarlo a un elemento específico
+              document.body.style.backgroundColor = color;
+            });
+          });
+        });
+      </script>
+
+    </footer>
+    </body>
+</html>
+ 
